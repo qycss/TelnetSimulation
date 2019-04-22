@@ -1,7 +1,8 @@
-﻿  server.cpp
-c:\users\lyq\source\repos\server.cpp(258): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+﻿  Server.cpp
+f:\课件\大三\计算机网络\project\server\server\server.cpp(183): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  d:\windows kits\10\include\10.0.17134.0\ucrt\time.h(506): note: 参见“localtime”的声明
+f:\课件\大三\计算机网络\project\server\server\server.cpp(310): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
   d:\windows kits\10\include\10.0.17134.0\um\winsock2.h(1830): note: 参见“inet_addr”的声明
-  stdafx.cpp
-  正在生成代码...
-c:\users\lyq\source\repos\server.cpp(54): warning C4715: “getPri”: 不是所有的控件路径都返回值
-  Server.vcxproj -> F:\课件\大三\计算机网络\project\Server\Server\Debug\Server.exe
+f:\课件\大三\计算机网络\project\server\server\server.cpp(57): warning C4715: “getPri”: 不是所有的控件路径都返回值
+f:\课件\大三\计算机网络\project\server\server\server.cpp(287): warning C4715: “Login”: 不是所有的控件路径都返回值
+  Server.vcxproj -> F:\课件\大三\计算机网络\project\Server\Debug\Server.exe

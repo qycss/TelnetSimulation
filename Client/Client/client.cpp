@@ -17,17 +17,27 @@ int main(int argc, char *argv[]) {
 
 	connect(s, (SOCKADDR*)&sockaddr, sizeof(SOCKADDR));
 	bool flag = false;
-
-	while (!flag) {
+	char buff[10] = "false";
+	while (1) {
 		
 		char id[MAXBYTE] = { 0 };
 		char pwd[MAXBYTE] = { 0 };
-		cout << "ID:" << endl;
+		char buff[MAXBYTE] = { 0 };
+
+		recv(s, buff, MAXBYTE, 0);
+		cout <<buff;
 		cin >> id;
 		send(s, id, MAXBYTE, 0);
+		recv(s, buff, MAXBYTE, 0);
+		cout << buff;
 		cin >> pwd;
 		send(s, pwd, MAXBYTE, 0);
-		recv(s, NULL, 1, flag);
+		recv(s, buff, MAXBYTE, 0);
+
+		if (!strcmp(buff, "true"))
+			break;
+		cout << "wrong ID or Password! Please try again..." << endl;
+
 	}
 	cout << "Login Successful!" << endl;
 
